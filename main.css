@@ -133,10 +133,9 @@ header img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3fr 1fr;
     grid-row-gap: 25px;
-    margin-right: 12px;
 }
 
-.footer-grid .location, .opening-hours, .social-media, .contact {
+.location, .opening-hours, .social-media, .contact {
     display: inline-block;
     width: 124px;
 }
@@ -147,20 +146,23 @@ header img {
 
 .location{
     justify-self: right;
+    margin-right: 14px;
 }
 
 .opening-hours {
     justify-self: center;
     margin-left: 50px;
+    margin-right: 14px;
 }
 
 .social-media {
     justify-self: center;
-    margin-right: 20px;
+    margin-right: 34px;
 }
 
 .contact{
     justify-self: left;
+    margin-right: 14px;
 }
 
 
