@@ -133,6 +133,7 @@ header img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3fr 1fr;
     grid-row-gap: 25px;
+    margin-right: 12px;
 }
 
 .footer-grid .location, .opening-hours, .social-media, .contact {
