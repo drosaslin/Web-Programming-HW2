@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: rgb(251, 229, 214);
+}
+
+h2, p, li {
+    font-family: Calibri;
+}
+
+.blue-background {
+    background-color: rgb(157, 195, 230);
+}
+
+.wrapper {
+    margin: 0px auto;
+    width: 984px;
+}
+
+/*-------------------------------------------------*/
+
+header {
+    position: relative;
+    text-align: center;
+    height: 230px;
+}
+
+
+header img {
+    display: inline-block;
+    width: 372px;
+    height: 230px;
+}
+
+.nav-bar {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    bottom: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    display: inline;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+/*--------------------------------------------------*/
+
+.container-products {
+    position: relative;
+    margin: 36px 0px 36px 0px;
+    height: 487px;
+}
+
+.products-images {
+    width: 984px;
+    height: 487px;
+}
+
+.container-products p {
+    display: inline-block;
+    position: absolute;
+    margin: 20px 0px 0px 20px;
+    top: 0%;
+    font-size: 23px;
+    color: white;
+    background-color: rgb(237, 125, 49);
+}
+
+/* ------------------------------------------------ */
+
+.container-icons img {
+    display: inline-block;
+    width: 218px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------ */
+
+.container-info {
+    margin-top: 80px;
+}
+
+.container-info .products-description, h2{
+    text-align: center;
+    margin: 0;
+}
+
+.container-info h2 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.products-description {
+    font-size: 27px;
+    font-style: italic;
+}
+
+.content {
+    float: left;
+}
+
+.cupcake-image {
+    float: left;
+    width: 380px;
+    height: 267px;
+    margin: 0px  20px 0px 30px;
+}
+
+.products-content {
+    margin: 0;
+}
