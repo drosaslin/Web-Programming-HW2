@@ -101,22 +101,26 @@ header img {
     font-weight: bold;
 }
 
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 .products-description {
     font-size: 27px;
     font-style: italic;
 }
 
-.content {
-    float: left;
-}
-
 .cupcake-image {
-    float: left;
     width: 380px;
     height: 267px;
     margin: 0px  20px 0px 30px;
 }
 
 .products-content {
-    margin: 0;
+    display: inline-block;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+    margin: 40px 40px 0px 0px;
 }
