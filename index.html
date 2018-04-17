@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <title>Dino Donuts</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
+        <header class="header">
             <ul class="nav-bar nav-left">
-                <li><a>HOME</a></li>
-                <li><a>ABOUT</a></li>
-                <li><a>CONTACT</a></li>
+                <li class="left"><a class="hvr-wobble-vertical" href="">HOME</a></li>
+                <li class="left"><a class="hvr-wobble-vertical" href="">ABOUT</a></li>
+                <li><a class="hvr-wobble-vertical" href="">CONTACT</a></li>
             </ul>
 
             <img src="images/dino_donuts_logo.png" alt="Dino Donuts">
             
             <ul class="nav-bar nav-right">
-                <li><a>MENU</a></li>
-                <li><a>ORDERS</a></li>
-                <li><a>GALLERY</a></li>
+                <li><a class="hvr-wobble-vertical" href="">MENU</a></li>
+                <li class="right"><a class="hvr-wobble-vertical" href="">ORDERS</a></li>
+                <li class="right"><a class="hvr-wobble-vertical" href="">GALLERY</a></li>
             </ul>
         </header> 
         
@@ -33,10 +34,10 @@
 
         <div class="blue-background">
             <div class="container-icons">
-                <img src="images/icons/donut_icon.png" alt="dounts">
-                <img src="images/icons/pastries_icon.png" alt="pastries">
-                <img src="images/icons/cake_icon.png" alt="cakes">
-                <img src="images/icons/drink_icon.png" alt="drinks">
+                <a class="hvr-float" href=""><img src="images/icons/donut_icon.png" alt="dounts"></a>
+                <a class="hvr-float" href=""><img src="images/icons/pastries_icon.png" alt="pastries"></a>
+                <a class="hvr-float" href=""><img src="images/icons/cake_icon.png" alt="cakes"></a>
+                <a class="hvr-float" href=""><img src="images/icons/drink_icon.png" alt="drinks"></a>
             </div>
 
             <div class="container-info">
@@ -78,7 +79,10 @@
                     <p>0987654321</p>
                     <p>sample@sample.com</p>
                 </div>
-                <p class="copyright">@ COPYRIGHT 2018 BREAD BREAD BREAD BREAD</p>
+                <div class="page-end">
+                    <div class="h-line"></div>
+                    <p class="copyright">@ COPYRIGHT 2018 BREAD BREAD BREAD BREAD</p>
+                </div>
             </footer>
         </div>
     </div>

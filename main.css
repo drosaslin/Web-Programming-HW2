@@ -23,14 +23,14 @@ h2, p, li {
 
 /*-------------------------------------------------*/
 
-header {
-    position: relative;
-    text-align: center;
-    height: 230px;
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 230px;
 }
 
 
-header img {
+.header img {
     display: inline-block;
     width: 372px;
     height: 230px;
@@ -40,10 +40,8 @@ header img {
     position: relative;
     display: inline-block;
     list-style: none;
-    vertical-align: middle;
-    bottom: 50%;
+    padding: 100px 0px 100px 0px;
     margin: 0;
-    padding: 0;
 }
 
 .nav-bar li {
@@ -52,6 +50,96 @@ header img {
     font-size: 23px;
 }
 
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar.nav-left {
+    justify-self: baseline;
+}
+
+.nav-bar.nav-left .left {
+    margin-right: 39px;
+}
+
+.nav-bar.nav-right {
+    justify-self: end;
+}
+
+.nav-bar.nav-right .right {
+    margin-left: 37px;
+}
+
+@-webkit-keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  .hvr-wobble-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
 
 /*--------------------------------------------------*/
 
@@ -86,10 +174,27 @@ header img {
     margin-top: 20px;
 }
 
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover,
+  .hvr-float:focus,
+  .hvr-float:active {
+    transform: translateY(-8px);
+  }
+
 /* ------------------------------------------------ */
 
 .container-info {
-    margin: 80px 0px 90px 0px;
+    margin: 80px 0px 80px 0px;
 }
 
 .container-info .products-description, h2{
@@ -136,6 +241,7 @@ header img {
 }
 
 .location, .opening-hours, .social-media, .contact {
+    font-family: Calibri;
     display: inline-block;
     width: 124px;
 }
@@ -165,9 +271,19 @@ header img {
     margin-right: 14px;
 }
 
+.page-end {
+    grid-column: 1/4;
+}
+
+.h-line {
+    height: 1px;
+    width: 984px;
+    background-color: rgb(251, 229, 214);
+}
 
 .copyright {
-    justify-self: center;
+    width: 984px;
+    text-align: center;
     font-weight: bold;
-    grid-column: 2/4;
-}
+    margin-top: 12px;
+} 
